@@ -153,6 +153,9 @@ function animate() {
     if (!sound.isPlaying) {
       sound.play();
     }
+    if(Boogies[Boogies.length - 1].position.x   >= num){
+      sound.stop();
+    }
     engine.position.x += 0.01 * speed;
     unitTime = 0.01;
 
