@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My first three.js app</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+      }
+      .input {
+        display: flex;
+        padding: 1rem;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .in {
+        border: 1px solid rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 5px;
+        width: 25%;
+        background-color: rgb(102, 102, 233);
+        color: white;
+      }
+      .in::placeholder {
+        color: rgb(255, 255, 255);
+        opacity: 1; /* Firefox */
+      }
+      .btn {
+        width: 5rem;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: yellow;
+        font-weight: bolder;
+      }
+      .texts {
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bolder;
+      }
+      .time{
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input">
+        <div class="texts" id="length">Engine and boggies length is 20m</div>
+        <div id="time" class="time"></div>
+        <input
+          class="in"
+          type="number"
+          placeholder="Enter number of train boggies...."
+          id="BoggiesNum"
+        />
+        <input
+          class="in"
+          type="number"
+          placeholder="Enter your speed...."
+          id="speed"
+        />
+        <button class="btn" id="play">PLAY</button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
