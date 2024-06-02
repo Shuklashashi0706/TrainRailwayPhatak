@@ -8,11 +8,16 @@
         margin: 0;
         padding: 0;
       }
-      .input {
+      .container {
+        width: 100%;
         position: absolute;
         display: flex;
+        justify-content: center;
+      }
+      .input {
+        display: flex;
         padding: 1rem;
-        width: 40rem;
+        width: 50%;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
@@ -42,28 +47,30 @@
         font-family: "Courier New", Courier, monospace;
         font-weight: bolder;
       }
-      .time {
+      .time{
         color: white;
       }
     </style>
   </head>
   <body>
-    <div class="input">
-      <div class="texts" id="length">Engine and boggies length is 20m</div>
-      <div id="time" class="time"></div>
-      <input
-        class="in"
-        type="number"
-        placeholder="Enter number of train boggies...."
-        id="BoggiesNum"
-      />
-      <input
-        class="in"
-        type="number"
-        placeholder="Enter your speed...."
-        id="speed"
-      />
-      <button class="btn" id="play">PLAY</button>
+    <div class="container">
+      <div class="input">
+        <div class="texts" id="length">Engine and boggies length is 20m</div>
+        <div id="time" class="time"></div>
+        <input
+          class="in"
+          type="number"
+          placeholder="Enter number of train boggies...."
+          id="BoggiesNum"
+        />
+        <input
+          class="in"
+          type="number"
+          placeholder="Enter your speed...."
+          id="speed"
+        />
+        <button class="btn" id="play">PLAY</button>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
